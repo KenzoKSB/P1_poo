@@ -58,6 +58,7 @@ public class Jogo {
                 System.out.println("***O PERSONAGEM MORREU***");
                 System.out.println("Inventario final: " + p.mochila);
                 System.out.println("Repertorio final: " + p.repertorio); //novo print de morte, exibindo a lista de musicas
+
                 break; // encerra o loop
             }
 

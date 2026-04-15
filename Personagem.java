@@ -31,7 +31,8 @@ public class Personagem{
             String item = itens[gerador.nextInt(itens.length)];
             mochila.add(item);
         
-        }else{
+        }
+        else{
             //sem energia, não caça
             System.out.printf("%s sem energia para caçar\n", nome);
         }
@@ -62,7 +63,8 @@ public class Personagem{
             System.out.print(nome + " dormindo\n");
             energia = energia == 10 ? energia : energia + 1;
             sono -= 1;
-        }else{
+        }
+        else{
             //se não tiver sono, não dorme
             System.out.println(nome + " sem sono");
         }
@@ -72,8 +74,7 @@ public class Personagem{
     public String toString(){  
         return String.format(
             "%s: e:%d, f:%d, s:%d, mochila:%s, repertorio:%s",
-            nome, energia, fome, sono, mochila, repertorio
-        );
+            nome, energia, fome, sono, mochila, repertorio) ;
     }
 
     //usa o boolean pra ter uma resposta binaria pra saber se o personagem continua vivo
