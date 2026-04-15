@@ -17,6 +17,14 @@ public class Personagem{
         fome = 0;
         sono = 0;
     }
+
+    //cria o padrão para podermos incluir os status dos personagens na sua criação
+    Personagem(int energia, int fome, int sono) {
+        System.out.println("Construindo novo personagem");
+        this.energia = energia < 0 || energia > 10 ? 10 : energia;
+        this.fome = fome >= 0 && fome <= 10 ? fome : 0;
+        this.sono = sono >= 0 && sono <= 10 ? sono : 0;
+    }
     
     //controla tudo da função de caçar
     void cacar(){
